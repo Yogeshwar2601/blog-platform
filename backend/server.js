@@ -14,7 +14,10 @@ import './config/cloudinary.js';
 const app = express();
 // middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "blog-platform-oisqskr36-yogeshwars-projects-79f9a555.vercel.app",
+    credentials: true,
+}));
 app.use(errorHandler);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
