@@ -15,7 +15,7 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: "blog-platform-oisqskr36-yogeshwars-projects-79f9a555.vercel.app",
+    origin: "https://blog-platform-oisqskr36-yogeshwars-projects-79f9a555.vercel.app",
     credentials: true,
 }));
 app.use(errorHandler);
