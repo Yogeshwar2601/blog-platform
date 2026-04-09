@@ -15,8 +15,7 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: "https://blog-platform-oisqskr36-yogeshwars-projects-79f9a555.vercel.app",
-    credentials: true,
+    origin: "*",
 }));
 app.use(errorHandler);
 const __filename = fileURLToPath(import.meta.url);
